@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleDisplayName</key><string>MagerCam Sender</string>
+    <key>CFBundleExecutable</key><string>MagerCamSender</string>
+    <key>CFBundleIdentifier</key><string>com.magercam.sender.macos</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>MagerCam Sender</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSCameraUseContinuityCameraDeviceType</key><true/>
+    <key>NSCameraUsageDescription</key><string>MagerCam Sender shares the selected Mac camera with a MagerCam receiver on another computer when you click Start sharing.</string>
+    <key>NSLocalNetworkUsageDescription</key><string>MagerCam Sender lets a MagerCam receiver on your local network discover and connect to this Mac’s camera.</string>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+</dict>
+</plist>

@@ -212,6 +212,17 @@ sh obs-plugin/build-linux.sh          # → obs-plugin/build-linux/magercam.so
 sh obs-plugin/linux/build-all.sh      # в Docker сразу три сборки для релиза: Ubuntu 24.04, Debian 13, Ubuntu 26.04
 ```
 
+Отправитель для macOS использует камеру Mac как источник для другого компьютера. Нужны macOS 13+ и Command Line Tools с SDK macOS 14+:
+
+```sh
+sh macos/build.sh
+open "macos/build/MagerCam Sender.app"
+```
+
+Выберите камеру и нажмите **Start sharing**. В приёмнике MagerCam введите IP-адрес Mac и код доступа из приложения. Пока только видео до 1920×1080 при 30 к/с, без микрофона.
+
+Архив для релиза: `sh macos/package.sh --version 0.1.0` → ZIP и SHA-256 в `macos/build/release/`.
+
 Для отладки: `node tools/fake-phone.js [порт] [--key 123456]` эмулирует телефон (тестовая картинка, тон 440 Гц, несколько объективов, H.264 и H.265 через ffmpeg, код доступа) по протоколу MagerCam. `node tools/obs-test.js ws://127.0.0.1:4455 <пароль>` автоматически тестирует источник через obs-websocket.
 
 ## Структура
